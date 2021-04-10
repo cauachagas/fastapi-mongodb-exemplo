@@ -12,8 +12,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
-          HEROKU_API_TOKEN: ${{secrets.HEROKU_API_KEY}}
-          HEROKU_APP_NAME: "fastapi-mongodb-exemplo"
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "fastapi-mongodb-exemplo"
           heroku_email: "caua.geof@gmail.com"
         env:
           MONGODB_URI: ${{secrets.MONGODB_URI}}
