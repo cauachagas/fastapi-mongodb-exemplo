@@ -8,8 +8,10 @@ venv.bak/
 
 .vscode
 .gitignore
-docker-compose.yml
 Dockerfile
-README.md
+docs.png
+heroku.yml
 Procfile
+README.md
+docker-compose.yml
 runtime.txt
