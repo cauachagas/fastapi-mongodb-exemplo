@@ -16,6 +16,9 @@ Para ver a documentação da API
 
 http://0.0.0.0:8004/docs/
 
+
+![](docs.png)
+
 ## Encerrando
 
 ```
@@ -64,6 +67,7 @@ git push heroku master
 ```
 
 OBS: Caso queira escolher a versão do Python, modifique o arquivo `runtime.txt`
+
 
 ## Deploy com Dockerfile
 
