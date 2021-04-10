@@ -4,7 +4,7 @@ from pydantic import BaseModel, EmailStr, Field
 
 class ProdutoSchema(BaseModel):
     nome: str = Field(...)
-    preco: float = Field(..., le=4.0)
+    preco: float = Field(..., ge=0.05, le=1000000.0)
 
     class Config:
         schema_extra = {
