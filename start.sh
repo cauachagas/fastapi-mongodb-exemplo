@@ -1,0 +1,2 @@
+#/bin/sh
+uvicorn app.server.app:app --reload --host 0.0.0.0 --port $PORT 

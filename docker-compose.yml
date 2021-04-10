@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build: ./
+    command: uvicorn app.server.app:app --reload --workers 1 --host 0.0.0.0 --port 8000
+    volumes:
+      - ./:/usr/src/
+    ports:
+      - 8004:8000
+    environment:
+      - ENVIRONMENT=dev
+      - MONGODB_URI=mongodb+srv://cauachagas:CZ7s4iE7O40ULfG4@cluster0.tgicj.mongodb.net/produtos?retryWrites=true&w=majority

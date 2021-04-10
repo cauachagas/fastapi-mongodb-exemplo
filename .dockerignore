@@ -1,0 +1,15 @@
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+.vscode
+.gitignore
+docker-compose.yml
+Dockerfile
+README.md
+Procfile
+runtime.txt
